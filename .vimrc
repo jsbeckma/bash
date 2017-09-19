@@ -9,4 +9,5 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" format current buffer
 map <F7> mzgg=G`z
