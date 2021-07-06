@@ -6,7 +6,8 @@ parse_git_branch() {
 # Change prompt setup and colors
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(parse_git_branch)\[\033[00m\] $ "
 export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
+# Generate with https://geoff.greer.fm/lscolors/
+export LSCOLORS=CxFxExDxBxegedabagacad
 
 
 # User settings
@@ -32,7 +33,7 @@ EDITOR=vim
 export EDITOR
 
 # Load any project specific settings
-for i in $(ls $HOME/.bash_profile_*[^swp]); do
+for i in $(ls $HOME/.bash_profile_*); do
     echo "Sourcing $i"
     source $i
 done
