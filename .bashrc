@@ -9,30 +9,6 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
-# Python related
-if [ "$OSTYPE" == "darwin*" ]; then
-    # Setting PATH for Python 2.7
-    # The original version is saved in .bash_profile.pysave
-    PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-    export PATH
-
-    # Setting PATH for Python 3.5
-    # The original version is saved in .bash_profile.pysave
-    PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-    export PATH
-
-    alias pip='python2 -m pip'
-    alias pip3='python3 -m pip'
-fi
-
-# Python - virtualenvwrapper setup
-if [ -f "/Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenvwrapper.sh" ]; then
-    export WORKON_HOME=~/Envs
-    source /Library/Frameworks/Python.framework/Versions/3.5/bin/virtualenvwrapper.sh
-    # make virtualenvwrapper available to subshells
-    export VIRTUALENVWRAPPER_SCRIPT
-fi
-
 # User settings
 alias cl='clear'
 alias vi='vim -p'
