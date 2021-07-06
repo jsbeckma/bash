@@ -26,10 +26,6 @@ alias br='git branch'
 alias gco='git checkout'
 alias tags='git for-each-ref --format="%(refname:short) %(taggerdate) %(subject) %(body)" refs/tags'
 
-#zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
-script ~/.zsh/git-completion.bash
-fpath=(~/.zsh $fpath)
-
 EDITOR=vim
 export EDITOR
 

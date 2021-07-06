@@ -8,6 +8,9 @@ cp .vimrc ~
 
 # If setting up a zsh environment, copy all files in zsh/ to $HOME:
 cp -r zsh/.* ~
+brew install zsh-completion
+brew install bash-completion
 
 # If setting up a bash environment, copy all files in bash/ to $HOME:
 cp -r bash/.* ~
+brew install bash-completion
