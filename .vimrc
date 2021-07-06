@@ -8,6 +8,7 @@ set autoindent
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set pastetoggle=<F3>
 
 " format current buffer
 map <F7> mzgg=G`z
